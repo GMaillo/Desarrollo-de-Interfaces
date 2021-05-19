@@ -8,7 +8,7 @@ El proyecto ha sido realizado por los alumnos del grupo DM1D1A:
 
 - María Martinez Sanz.
 
-- Victor Lópe Lozano.
+- Victor López Lozano.
 
 - Gabriel Maillo Sevilla.
 
@@ -31,25 +31,25 @@ Una vez descargado, importamos el proyecto a eclipse.
 
 En eclipse, comprobamos en preferences/JavaFx, que la configuración de SceneBuilder es correcta. Comprobamos que la ruta del ejecutable es correcta. De no aparecer, mediante la pestaña Browse le indicamos la ruta.
 
-![SceneBuilder executable](recursos\img\1.png)
+![SceneBuilder executable](recursos/img/1.png)
 
 De esta manera podemos ejecutar clicando con el boton derecho del ratón `JavaFX Scene Builder` para poder modificar en un entorno gráfico la aplicación.
 
 Ahora comprobamos en preferences/Java/compiler y en preferences/Installed JREs, que tenemos instalada la versión 11 de java o una superior.
 
-![preferences/compiler](recursos\img\2.png)
+![preferences/compiler](recursos/img/2.png)
 
-![preferences/Installed](recursos\img\3.png)
+![preferences/Installed](recursos/img/3.png)
 
 Llegado a este punto, accedemos a la carpeta del proyecto [`librerias`](librerias) donde encontraremos dos carpetas con las librerías de JavaFX necesarias para que el proyecto funcione en funcion del sistema operativo que se vaya a utilzar. Escogemos la que corresponda y descomprimimos el archivo comprimido que contiene las librerias.
 
 Después, clicamos con el botón derecho en la carpeta de nuestro proyecto, y seleccionamos las opciones `Build Path/Configure Build Path/Add External JARs`, seleccionamos todos las librerías que descomprimimos previamente y las añadimos.
 
-![external JARs](recursos\img\4.png)
+![external JARs](recursos/img/4.png)
 
 Añadimos la librería JavaFX SDK de no encontrarse en Java Build Path
 
-![javafx sdk](recursos\img\5.png)
+![javafx sdk](recursos/img/5.png)
 
 Por último,  mediante `Add Library/JRE System Library/Installed JREs` seleccionamos Java 11 y aplicamos los cambios. De tener alguna otra versión, la eliminaremos.
 
@@ -63,7 +63,7 @@ En la ventana VM arguments, debemos introducir lo siguiente:
 
 Como las rutas varían en funcion del sistema operativo utilizado, lo más sentillo es copiar la ruta directamente de la carpeta `lib` e introducirla después del module path.
 
-![module path](recursos\img\6.png)
+![module path](recursos/img/6.png)
 
 
 ## INSTALACIÓN Y CONFIGURACIÓN DE LA BASE DE DATOS
@@ -79,7 +79,7 @@ Se puede modificar el nombre de usuario y la contraseña, pero es importante rec
 
 Para terminar de configurar la base de datos, mediante este [enlace](https://mariadb.com/downloads/#connectors) podremos descargar el `jdbc (Java Database Connectivity)` necesario para poder conectar la aplicación con la base de datos.
 
-![jdbc](recursos\img\7.png)
+![jdbc](recursos/img/7.png)
 
 De la misma manera que hicimos anteriormente, clicamos con el botón derecho del ratón sobre nuestro proyecto y seleccionamos `Build Path/Configure Build Path/Add External JARs` indicandole esta vez el fichero jdbc que acabamos de descargar.
 
@@ -88,28 +88,28 @@ De la misma manera que hicimos anteriormente, clicamos con el botón derecho del
 
 Si ejecutamos la aplicación, aparecerá la siguiente ventana:
 
-![ventana principal](recursos\img\8.png)
+![ventana principal](recursos/img/8.png)
 
 Ahora, pasaremos a ver las diferentes funcionalidades de la aplicación.
 
 # ALTA DE CONTACTOS
 
 Para dar de alta un nuevo contacto, pulsamos en la pestaña `Nuevo` y rellenanmos los campos requeridos.
-![alta contacto](recursos\img\9.png)
+![alta contacto](recursos/img/9.png)
 
 # MODIFICAR UN CONTACTO
 
 Para modificar los datos de un contacto existente, pulsamos sobre el contacto a modificar, y despues clicamos en la pestaña `Editar`.
-![modificar contacto](recursos\img\10.png)
+![modificar contacto](recursos/img/10.png)
 
 # BORRAR UN CONTACTO
 
 Para eliminar un contacto existente, pulsamos sobre el contacto que queremos eliminar, y despues clicamos en la pestaña `Eliminar`.
-![borrar contacto](recursos\img\11.png)
+![borrar contacto](recursos/img/11.png)
 
 # ESTADÍSTICAS
 
 Para ver las estadísticas, mediante un gráfico de barras del número de personas que cumplen años cada mes, pulsamos en la pestaña `Estadísticas/Ver Estadísticas`. 
 
-![estadisticas](recursos\img\12.png)
+![estadisticas](recursos/img/12.png)
 
