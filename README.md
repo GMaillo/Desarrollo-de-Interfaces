@@ -6,6 +6,8 @@ El objetivo es realizar una agenda para guardar contactos con persistencia en un
 
 El proyecto ha sido realizado por los alumnos del grupo DM1D1A:
 
+<br/><br/>
+
 - María Martinez Sanz.
 
 - Victor López Lozano.
@@ -13,11 +15,8 @@ El proyecto ha sido realizado por los alumnos del grupo DM1D1A:
 - Gabriel Maillo Sevilla.
 
   <br/><br/>
-  <br/><br/>
-
+  
 ## REQUISITOS
-
-   <br/><br/>
 
 - Java 11 o superior.
 
@@ -25,14 +24,11 @@ El proyecto ha sido realizado por los alumnos del grupo DM1D1A:
 
 - [JavaFX Scene Builder](https://www.oracle.com/java/technologies/javase/javafxscenebuilder-info.html)
 
-- [MariaDB](https://mariadb.org/)
-  
-   <br/><br/>
+- [MariaDB](https://mariadb.org/)  
    <br/><br/>
 
 ## INSTALACIÓN
 
-   <br/><br/>
 
 Lo primero que debemos hacer es descargar el repositorio desde el enlace de descarga.
 
@@ -93,7 +89,7 @@ En la ventana VM arguments, debemos introducir lo siguiente:
    --module-path "RUTA DE LAS LIBRERÍAS JAVAFX DESCARGADA" --add-modules javafx.controls,javafx.fxml
 ```
 
-<br/><br/>
+
 
 Como las rutas varían en funcion del sistema operativo utilizado, lo más sentillo es copiar la ruta directamente de la carpeta `lib` e introducirla después del module path.
 
@@ -106,7 +102,7 @@ Como las rutas varían en funcion del sistema operativo utilizado, lo más senti
 
 ## INSTALACIÓN Y CONFIGURACIÓN DE LA BASE DE DATOS
 
-<br/><br/>
+
 
 Ahora vamos a instalar la base de datos `MariaDB`. Pinchando en el nombre en la sección de requisitos, seremos redirigidos a la web oficial para poder descargar el programa. Una vez descargado e instalado, dentro de MariaDB, crearemos un nuevo usuario con privilegios de administrador mediante el comando:
 
@@ -116,7 +112,6 @@ GRANT ALL ON *.* TO 'maviga' IDENTIFIED BY '1234' WITH GRANT OPTION;
 
 ```
 
-<br/><br/>
 
 Se puede modificar el nombre de usuario y la contraseña, pero es importante recordar que habrá que modificar la parte correspondiente en el `MainApp` para que pueda establecer la conexión correctamente.
 
@@ -133,11 +128,9 @@ Para terminar de configurar la base de datos, mediante este [enlace](https://mar
 De la misma manera que hicimos anteriormente, clicamos con el botón derecho del ratón sobre nuestro proyecto y seleccionamos `Build Path/Configure Build Path/Add External JARs` indicandole esta vez el fichero jdbc que acabamos de descargar.
  <br/><br/>
  <br/><br/>
- <br/><br/>
 
 # MANUAL DE USUARIO 📖
 
-<br/><br/>
 
 Si ejecutamos la aplicación, aparecerá la siguiente ventana:
 <br/><br/>
@@ -146,14 +139,10 @@ Si ejecutamos la aplicación, aparecerá la siguiente ventana:
 
 <br/><br/>
 
-
 Ahora, pasaremos a ver las diferentes funcionalidades de la aplicación.
-
 <br/><br/>
 
 ## ALTA DE CONTACTOS
-
-<br/><br/>
 
 Para dar de alta un nuevo contacto, pulsamos en la pestaña `Nuevo` y rellenanmos los campos requeridos.
 
@@ -161,12 +150,9 @@ Para dar de alta un nuevo contacto, pulsamos en la pestaña `Nuevo` y rellenanmo
 
 ![alta contacto](recursos/img/9.png)
   
-<br/><br/>
-<br/><br/>    
+<br/><br/>  
 
 ## MODIFICAR UN CONTACTO
-
-<br/><br/>
 
 Para modificar los datos de un contacto existente, pulsamos sobre el contacto a modificar, y despues clicamos en la pestaña `Editar`.
 
@@ -174,7 +160,6 @@ Para modificar los datos de un contacto existente, pulsamos sobre el contacto a 
 
 ![modificar contacto](recursos/img/10.png)
   
-<br/><br/>
 <br/><br/>    
 
 ## BORRAR UN CONTACTO
@@ -188,11 +173,8 @@ Para eliminar un contacto existente, pulsamos sobre el contacto que queremos eli
 ![borrar contacto](recursos/img/11.png)
   
 <br/><br/>
-<br/><br/>    
 
 ## ESTADÍSTICAS
-
-<br/><br/>
 
 Para terminar, podemos ver las estadísticas, mediante un gráfico de barras, del número de personas que cumplen años cada mes.
 
