@@ -29,13 +29,13 @@ Lo primero que debemos hacer es descargar el repositorio desde el enlace de desc
 
 Una vez descargado, importamos el proyecto a eclipse. 
 
-En eclipse, comprobamos en preferences/JavaFx, que la configuración de SceneBuilder es correcta. Comprobamos que la ruta del ejecutable es correcta. De no aparecer, mediante la pestaña Browse le indicamos la ruta.
+En eclipse, observamos en `preferences/JavaFx` que la configuración de SceneBuilder es correcta, comprobando la ruta del ejecutable. De no aparecer, mediante la pestaña Browse le indicamos la ruta.
 
 ![SceneBuilder executable](recursos/img/1.png)
 
 De esta manera podemos ejecutar clicando con el boton derecho del ratón `JavaFX Scene Builder` para poder modificar en un entorno gráfico la aplicación.
 
-Ahora comprobamos en preferences/Java/compiler y en preferences/Installed JREs, que tenemos instalada la versión 11 de java o una superior.
+Ahora comprobamos en `preferences/Java/compiler` y en `preferences/Installed` JREs, que tenemos instalada la versión 11 de java o una superior.
 
 ![preferences/compiler](recursos/img/2.png)
 
@@ -57,13 +57,13 @@ De nuevo en la aplicación, clicamos con el botón derecho del ratón en el Main
 En la ventana VM arguments, debemos introducir lo siguiente:
 
 ```txt
-
    --module-path "RUTA DE LAS LIBRERÍAS JAVAFX DESCARGADA" --add-modules javafx.controls,javafx.fxml
 ```
 
 Como las rutas varían en funcion del sistema operativo utilizado, lo más sentillo es copiar la ruta directamente de la carpeta `lib` e introducirla después del module path.
 
 ![module path](recursos/img/6.png)
+
 
 
 ## INSTALACIÓN Y CONFIGURACIÓN DE LA BASE DE DATOS
@@ -84,7 +84,8 @@ Para terminar de configurar la base de datos, mediante este [enlace](https://mar
 De la misma manera que hicimos anteriormente, clicamos con el botón derecho del ratón sobre nuestro proyecto y seleccionamos `Build Path/Configure Build Path/Add External JARs` indicandole esta vez el fichero jdbc que acabamos de descargar.
 
 
-## MANUAL DE USUARIO
+
+# MANUAL DE USUARIO 📖
 
 Si ejecutamos la aplicación, aparecerá la siguiente ventana:
 
@@ -92,24 +93,33 @@ Si ejecutamos la aplicación, aparecerá la siguiente ventana:
 
 Ahora, pasaremos a ver las diferentes funcionalidades de la aplicación.
 
-# ALTA DE CONTACTOS
+
+## ALTA DE CONTACTOS
 
 Para dar de alta un nuevo contacto, pulsamos en la pestaña `Nuevo` y rellenanmos los campos requeridos.
+
 ![alta contacto](recursos/img/9.png)
 
-# MODIFICAR UN CONTACTO
+
+## MODIFICAR UN CONTACTO
 
 Para modificar los datos de un contacto existente, pulsamos sobre el contacto a modificar, y despues clicamos en la pestaña `Editar`.
+
 ![modificar contacto](recursos/img/10.png)
 
-# BORRAR UN CONTACTO
+
+## BORRAR UN CONTACTO
 
 Para eliminar un contacto existente, pulsamos sobre el contacto que queremos eliminar, y despues clicamos en la pestaña `Eliminar`.
+
 ![borrar contacto](recursos/img/11.png)
 
-# ESTADÍSTICAS
 
-Para ver las estadísticas, mediante un gráfico de barras del número de personas que cumplen años cada mes, pulsamos en la pestaña `Estadísticas/Ver Estadísticas`. 
+## ESTADÍSTICAS
+
+Para terminar, podemos ver las estadísticas, mediante un gráfico de barras, del número de personas que cumplen años cada mes.
+
+Para ello, pulsamos en la pestaña: `Estadísticas/Ver Estadísticas`. 
 
 ![estadisticas](recursos/img/12.png)
 
